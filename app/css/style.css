@@ -1,0 +1,193 @@
+/* RESET START */
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #111;
+    font: 12px/1 "Harmonia_regular", sans-serif;
+    background-color: #f4f6f8;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff5912;
+}
+img{
+    max-width: 100%;
+}
+input, textarea, button{
+    outline: none;
+    border: none;
+}
+textarea{
+    resize: vertical;
+}
+button{
+    cursor: pointer;
+}
+/* RESET END */
+
+/* DEFAULT CLASSES START */
+.flex-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.align-center{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.justify-sp-between{
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.custom-icon{
+    display: inline-block;
+}
+.orange-text{
+    color: #ff5912;
+}
+/* DEFAULT CLASSES END */
+
+/* DEFAULT COMPONENT START */
+.title{
+    font-family: 'Harmonia_black';
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.title.big{
+    font-size: 52px;
+}
+.default-section{
+    padding: 60px 0;
+}
+.item{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+    background-color: #fff;
+    padding: 30px 10px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    text-align: center;
+}
+.item:hover{
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.item .item-title{
+    color: #34404b;
+    margin: 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.item-price{
+    color: #ff5912;
+}
+header .top-header{
+    border-bottom: 1px solid #edeff1;
+    padding: 20px 0;
+}
+header .top-header .phones-list li + li{
+    margin-left: 20px;
+}
+header .top-header .phones-list li span.custom-icon{
+    margin-right: 10px
+}
+header .top-header .social-nav a + a{
+    margin-left: 15px;
+}
+header .bottom-header{
+    border-bottom: 1px solid #edeff1;
+    padding: 40px 0;
+}
+header .bottom-header .header{
+    margin-left: 84px;
+}
+header .bottom-header .navigation li + li{
+    margin-left: 40px;
+}
+header .bottom-header .user-controls{
+    margin-left: auto;
+}
+header .bottom-header .user-controls a + a{
+    margin-left: 30px;
+}
+header .bottom-header .user-controls a:last-child{
+    position: relative;
+}
+header .bottom-header .user-controls .label {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 3px;
+    height: 18px;
+    width: 18px;
+    background-color: #34404b;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    padding-top: 4px;
+}
+.items-carousel{
+    min-height: 650px;
+    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
+    margin-bottom: 60px;
+}
+.subtitle{
+    display: block;
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #3c4751;
+    margin-bottom: 15px;
+}
+.description{
+    display: block;
+    font-family: 'Harmonia_regular'; 
+    font-size: 16px;
+    color: #495662;
+    margin-bottom: 70px;
+    text-transform: none;
+}
+.price-wrap{
+    margin-top: 64px;
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+}
+.price-wrap .price{
+    display: inline-block;
+    color: #34404b;
+    margin-right: 30px;
+}
+.price-wrap a span{
+    margin-right: 15px;
+}
+/* DEFAULT COMPONENT END */
+
+/* ALL STYLES START */
+
+/* ALL STYLES END */
