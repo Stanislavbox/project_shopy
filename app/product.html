@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    
 
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -54,7 +55,7 @@
                 <nav class="header flex-container align-center">
                     <ul class="navigation flex-container">
                         <li class="flex-container"><a href="index.html">Home</a></li>
-                        <li class="flex-container"><a href="product.html">Products</a></li>
+                        <li class="flex-container"><a href="#">Products</a></li>
                         <li class="flex-container"><a href="#">Hot Deals</a></li>
                         <li class="flex-container"><a href="#">About</a></li>
                         <li class="flex-container"><a href="#">Contact</a></li>
@@ -73,24 +74,86 @@
 
 <!-- MAIN START -->
 <main>
-    <section class="items-carousel flex-container align-center">
+    <div class="product-wrap">
         <div class="container">
-            <div class="items-carousel-description">
-                <div class="title big orange-text"><span>FULL WINTER KIT</span></div>
-                <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
-                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                <div class="price-wrap">
-                    <div class="price">Price: $120</div>
-                    <a href="#" class="buy orange-text"><span class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="product-carousel center-block">
+                        <!-- Place somewhere in the <body> of your page -->
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="img/product-slide-1.png">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                                <li data-thumb="img/product-slide-1.png">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                                <li data-thumb="img/product-slide-1.png">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>            
+                <div class="col-md-7">
+                    <div class="description-product">
+                        <div class="order-info">
+                            <div class="title big orange-text"><span>FULL WINTER KIT</span></div>
+                            <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
+                            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                                    Lorem Ipsum is simply dummy text of the printing
+                                                    and typesetting industry</p>
+                            <div class="order-form">
+                                <form id="product-option" class="flex-container justify-sp-between">
+                                    <div class="chose-size flex-container align-center">
+                                        <span>Chose Size</span>
+                                        <div class="size-radio-btn-group flex-container align-center">
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="sSize">
+                                                <label for="sSize">s</label>
+                                            </div>
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="mSize">
+                                                <label for="mSize">m</label>
+                                            </div>
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="lSize" checked>
+                                                <label for="lSize">l</label>
+                                            </div>
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="xlSize">
+                                                <label for="xlSize">xl</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="quantity flex-container align-center">
+                                        <span>Choos Quantity</span>
+                                        <input type="number" name="quantity" class="custom-number" value="1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-now flex-container align-center justify-sp-between">
+                                <div class="product-price">
+                                    Price: 120$
+                                </div>
+                                <ul class="product-share">
+                                    <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
+                                    <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
+                                    <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                </ul>
+                                <input type="submit" value="Order now" form="product-option" class="btn btn-order btn-radius">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </section>
+    </div>
     <section class="default-section">
         <div class="container">
             <div class="title text-center">
-                <span><span class="orange-text">NEW</span> ARRIVALS</span>
+                <span><span class="orange-text">RELATED</span> PRODUCTS</span>
             </div>
             <span class="description text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
             <div class="new-items">
@@ -222,132 +285,6 @@
                     </div> 
                 </div>
             </div>
-            <div class="load-more">
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-            </div>
-        </div>
-    </section>
-    <section class="default-section">
-        <div class="container">
-            <div class="deal">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="hot-deal flex-container align-center white-bg">
-                            <div class="sale">
-                                <p>Sale</p>
-                                <span>50%</span>
-                                <div class="layer-1 light-orange-bg"></div>
-                                <div class="layer-2 orange-bg"></div>
-                            </div>
-                            <div class="sale-title">
-                                FULL WINTER KIT
-                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                            </div>
-                            <div class="sale-price orange-text"><a href="#"><span class="custom-icon icon-add-to-cart-hover-ic"></span>120$</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="adv flex-container align-center white-bg">
-                            <div class="adv-title">
-                                <div >adv<span class="orange-text"> area</span></div>
-                                <div class="adv-size">470 x 100</div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="default-section">
-        <div class="container">
-            <div class="title text-center">
-                <span><span class="orange-text">Best</span> Sales</span>
-            </div>
-            <span class="description text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
-            <div class="best-sales">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="item-product white-bg flex-container align-center justify-sp-between">
-                            <div class="product-img">
-                                <img src="img/item-img-1-min.png" alt="">
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">
-                                    <a href="#">Reebok Track Jacket</a>
-                                </div>
-                                <div class="like">
-                                    <ul>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-grey" aria-hidden="true"></i></li>
-                                    </ul>
-                                    <div class="item-price">
-                                        <span>100$</span>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart orange-text">
-                                    <a href="#"><span class="custom-icon icon-add-to-cart-hover-ic"></span>add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item-product white-bg flex-container align-center">
-                            <div class="product-img">
-                                <img src="img/item-img-1-min.png" alt="">
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">
-                                    <a href="#">Reebok Track Jacket</a>
-                                </div>
-                                <div class="like">
-                                    <ul>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-grey" aria-hidden="true"></i></li>
-                                    </ul>
-                                    <div class="item-price">
-                                        <span>100$</span>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart orange-text">
-                                    <a href="#"><span class="custom-icon icon-add-to-cart-hover-ic"></span>add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item-product white-bg flex-container align-center">
-                            <div class="product-img">
-                                <img src="img/item-img-1-min.png" alt="">
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">
-                                    <a href="#">Reebok Track Jacket</a>
-                                </div>
-                                <div class="like">
-                                    <ul>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-orange" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star stars-grey" aria-hidden="true"></i></li>
-                                    </ul>
-                                    <div class="item-price">
-                                        <span>100$</span>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart orange-text">
-                                    <a href="#"><span class="custom-icon icon-add-to-cart-hover-ic"></span>add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section class="default-section subscribe">
@@ -422,7 +359,8 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>

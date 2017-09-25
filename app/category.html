@@ -10,8 +10,10 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- JQuery UI Stule -->
+    <!-- jQuery style -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -29,7 +31,7 @@
 <body>
 <!-- HEADER START -->
 <header>
-    <div class="top-header">
+    <div class="top-header white-bg">
         <div class="container">
             <div class="flex-container justify-sp-between">
                 <ul class="phones-list flex-container align-center">
@@ -45,14 +47,14 @@
             </div>
         </div>
     </div>
-    <div class="bottom-header">
+    <div class="bottom-header white-bg">
         <div class="container">
             <div class="flex-container justify-sp-between ">
                 <div class="logo flex-container"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
                 <nav class="header flex-container align-center">
                     <ul class="navigation flex-container">
-                        <li class="flex-container"><a href="#">Home</a></li>
-                        <li class="flex-container"><a href="#">Products</a></li>
+                        <li class="flex-container"><a href="index.html">Home</a></li>
+                        <li class="flex-container"><a href="product.html">Products</a></li>
                         <li class="flex-container"><a href="#">Hot Deals</a></li>
                         <li class="flex-container"><a href="#">About</a></li>
                         <li class="flex-container"><a href="#">Contact</a></li>
@@ -93,9 +95,15 @@
                             </div>
                             <div class="range">
                                 <div id="slider-range"></div>
-                                <div class="range-info">
-                                    <label for="amount">Price range:</label>
-                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                <div class="add-range-value flex-container" >
+                                    <div class="range-input-reoup">
+                                        <label for="fromValue">From</label>
+                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                    </div>
+                                    <div class="range-input-reoup">
+                                        <label for="toValue">To</label>
+                                        <input type="number" name="toValue" id="toValue" min="0">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -114,11 +122,11 @@
                                 </div>
                                 <div class="checkbox-group">
                                     <input type="checkbox" name="sizeLarg" id="sizeLarg">
-                                    <label for="sizeLarg">Larg</label>
+                                    <label for="sizeLarg">Large</label>
                                 </div>
                                 <div class="checkbox-group">
                                     <input type="checkbox" name="sizeXLarg" id="sizeXLarg">
-                                    <label for="sizeXLarg">X Larg</label>
+                                    <label for="sizeXLarg">X Large</label>
                                 </div>
                             </form>
                         </div>
@@ -508,6 +516,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>
 </html>
